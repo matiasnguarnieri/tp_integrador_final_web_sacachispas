@@ -1,8 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
 
+/*Globales*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 25px;
+}
+
+/*Header*/
+
+.contenedorEncabezado{ /*logo+carrito+buscador*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.carritoCompras{
+  width: 50px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.nav{
+  display: inline;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-list{
+  list-style-type: none;
+  list-style: none;
+  width: 100%;
+  padding: 60px;
+}
+
+.botonesNav{
+  list-style: none;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.nav-link{
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-right: -1.5px;
+  border-bottom: 2px solid rgba(165,112,178,0.7);
+}
+
+#activo{
+  opacity: 100%;
+}
+
+.nav-link:hover{
+  background-color: white;
+  color: rgb(141, 97, 182);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+section{
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.portada{
+  width: 100%;
+  background: url(/img/portada.jpg) center no-repeat;
+  background-size: cover;
+  opacity: .9;
+}
+
+/*img{
+  width: 100%;
+  max-width: 100%;
+}*/
+
+/*Header*/
+
+header{
+  width: 100%;
+  top: 0;
+  left: 0;
+  /*z-index: 1;*/
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.3), transparent);
+}
+
+.logo{
+  width: 100px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight:normal;
+  letter-spacing: 5px;
+}
+
+.buscador-input{
+  width: 700px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid black;
+  opacity: .7;
+  text-align: center;
+  }
+
+.bannerInicio{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+/*Productos*/
+
+.productos{
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  margin: 20px;
+  padding: 20px;
+}
+
+.imagenProducto{
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  box-shadow: 5px 8px 12px rgba(0,0,0,.3);
+}
+
+.tituloProducto{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5px;
+  border-bottom: 1px rgba(136, 61, 155, 0.5) solid;
+}
+
+.precio{
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(133, 69, 133);
+}
+
+.productos i{
+  margin: 2px;
+  padding: 2px;
+}
+
+.cuotas{
+  font-size: 12px;
+}
+
+section h2{
+  text-align: center;
+  font-size: 23px;
+  padding: 5px;
+}
+
+/*Categorías*/
+
+.categorias{
+  display: flex;
+  justify-content: center;
+}
+
+.categorias img{
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 5px 8px 12px rgba(0,0,0,.3);
+}
+
+.categorias a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.imagenCategoria{
+  margin: 20px;
+  padding: 20px;
+}
+
+.categorias p{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5px;
+  border-bottom: 1px rgba(136, 61, 155, 0.5) solid;
+}
+
+/*Formas de Pago*/
+
+.formasPago{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.formasPago h2{
+  text-align: center;
+}
+
+.formasPago img{
+  width: 100px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/*Footer*/
+
+.footer{
+  background-color: #252525;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer p{
+  font-size: 15px;
+}
+
+footer li{
+  list-style: none;
+}
+
+.social-icons{
+  display: flex;
+}
+
+footer i{
+  font-size: 20px;
+  color: white;
+  margin: 5px 5px 5px;
+  padding: 2px;
+}
+
+footer i:hover{
+  color: rgb(179, 84, 179);
+}
+
+.datosGrupo{
+  font-weight: bold;
+}
+
+.logoFooter{
+  font-size: 10px;
+}
+
+/*Simbolos*/
 .material-symbols-outlined {
+  width: 50px;
   font-variation-settings:
   'FILL' 1,
-  'wght' 200,
+  'wght' 50px,
   'GRAD' -25,
   'opsz' 40
 }
